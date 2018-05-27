@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Contact Form</h1>
+  <form>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" id="title" required [(ngModel)]="model.title" name="title">
+    </div>
+    <div class="form-group">
+      <label for="author">Message</label>
+      <input type="text" class="form-control" id="author" required [(ngModel)]="model.message" name="author">
+    </div>
+    
+    <button type="submit" (click)="save(model)" class="btn btn-default">Submit</button>
+   </form>
+ </div>
